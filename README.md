@@ -47,25 +47,6 @@ The site gathers popular tools like GitHub, VS Code, Postman and Wireshark, with
 └── README.md
 ```
 
-## Adding a New Tool
-
-Open `script.js` and add a new object to the `TOOLS` array:
-
-```js
-{
-  name: "Tool Name", short: "AB", cat: "dev", level: 1,
-  price: "مجاني", url: "https://example.com",
-  desc: "تعريف مختصر بالأداة.",
-  uses: ["استخدام أول", "استخدام ثاني", "استخدام ثالث"],
-},
-```
-
-- `cat`: the category — `dev`, `vcs`, `sec`, `net` or `design`
-- `level`: `1` Beginner, `2` Intermediate, `3` Advanced
-- `short`: 2–3 characters shown as the tool's logo badge
-
-The cards and filter counts update automatically.
-
 ## Run Locally
 
 Download the files into one folder and open `index.html` in your browser. No installation needed.
