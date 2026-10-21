@@ -69,8 +69,3 @@ The cards and filter counts update automatically.
 ## Run Locally
 
 Download the files into one folder and open `index.html` in your browser. No installation needed.
-
----
-
-**Hash Plus**
-Created by: Ghadi Alzahrani غدي الزهراني
