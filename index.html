@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>1Tech Tools Directory</title>
+  <meta name="description" content="دليل أدوات تقنية مفيدة للمبرمجين وطلاب التقنية مع تعريف مختصر بكل أداة واستخداماتها">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alexandria:wght@500;600;700&family=IBM+Plex+Sans+Arabic:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!--BODY-START-->
+  <div class="blobs" aria-hidden="true">
+    <span class="blob b1"></span>
+    <span class="blob b2"></span>
+    <span class="blob b3"></span>
+    <span class="blob b4"></span>
+  </div>
+
+  <div class="page">
+    <header class="topbar">
+      <div class="wrap">
+        <a class="brand" href="#">
+          <span class="brand-mark">1T</span>
+          <span>1Tech</span>
+        </a>
+        <span class="topbar-note">دليل أدوات للمبرمجين وطلاب التقنية</span>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="wrap">
+        <div class="hero-inner">
+          <span class="eyebrow">دليل أدوات 1Tech</span>
+          <h1>أدواتك التقنية في <span class="hl">مكان واحد</span></h1>
+          <p class="lead">اكتشف أشهر الأدوات التي يستخدمها المبرمجون وطلاب التقنية، مع تعريف مختصر بكل أداة وما تُستخدم فيه، ورابط مباشر لموقعها الرسمي.</p>
+
+          <ul class="stats">
+            <li><b id="stat-tools">18</b> أداة</li>
+            <li><b id="stat-cats">5</b> تصنيفات</li>
+            <li>كلها فيها <b>خيار مجاني</b></li>
+          </ul>
+
+          <div class="search-row">
+            <label class="search" for="search">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+              <input id="search" type="search" placeholder="ابحث عن أداة… مثل Git أو شبكات" autocomplete="off" aria-label="ابحث عن أداة">
+            </label>
+            <button class="btn" id="surprise" type="button">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M5.6 18.4l2.1-2.1M16.3 7.7l2.1-2.1"/></svg>
+              اقترح لي أداة
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker-track" id="ticker"></div>
+    </div>
+
+    <main class="wrap" id="tools">
+      <div class="toolbar">
+        <div class="chips" id="chips" role="group" aria-label="التصنيفات"></div>
+        <span class="result-count" id="count" aria-live="polite"></span>
+      </div>
+
+      <div class="grid" id="grid"></div>
+
+      <div class="empty" id="empty" hidden>
+        <p class="title">لا توجد أداة مطابقة</p>
+        <p class="muted">جرّب كلمة أخرى أو اختر تصنيفًا مختلفًا.</p>
+        <button class="btn" id="reset" type="button">عرض كل الأدوات</button>
+      </div>
+    </main>
+
+    <footer>
+      <div class="wrap">
+        <span class="credits"><b dir="ltr">Hash Plus</b><br>إعداد: <span dir="ltr">Ghadi Alzahrani</span> غدي الزهراني</span>      </div>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+<!--BODY-END-->
+</body>
+</html>
